@@ -323,3 +323,14 @@ footer a:hover {
   color: #fff;                 
   border-color: #8A2BE2;     
 }
+
+
+.navbar-dark .form-control {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.navbar-dark .form-control:focus {
+  background-color: #fff;
+  color: #000 !important;
+}
