@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página de Login</title>
   <link rel="stylesheet" href="Css/login.css" />
 </head>
+
 <body>
-  
+
   <div class="login-container">
-    <img src="img/passaroKao.png" alt="Logo KaoArt" class="logo-login" />
+    <img src="img/passaroKao.png" alt="Logo KaoArt" class="logo-login" id="passarinho" />
     <h1>Login</h1>
     <form id="loginForm" action="validar_user.php" method="POST">
       <div class="input-group">
@@ -26,30 +28,15 @@
       <p id="message"></p>
     </form>
   </div>
+  <script>
+    const passarinho = document.getElementById('passarinho');
 
-  <!-- <script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault();
+    passarinho.addEventListener('dblclick', () => {
 
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      const message = document.getElementById('message');
-
-      // Isso serve para verificar a senha e o usuário.
-      if (username === 'NewTec' && password === 'Senha1234') {
-        message.style.color = 'green';
-        message.textContent = 'Login bem-sucedido!';
- 
-        // Esse serve para voltar para a página do inicio, se o usuário e a senha estiverem corretos.
-        setTimeout(() => {
-    window.location.href = "index.html"; 
-  }, 1000);
-      } else {
-        message.style.color = 'red';
-        message.textContent = 'Usuário ou senha incorretos.';
-      }
+      window.location.href = 'login_adm.html';
     });
+  </script>
 
-  </script> -->
 </body>
+
 </html>
